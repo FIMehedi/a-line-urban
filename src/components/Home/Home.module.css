@@ -1,0 +1,11 @@
+.homeContainer {
+    background: url(/src/bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 100vh;
+}
+
+.home {
+    padding: 20px;
+    min-height: calc(100vh - 79px);
+}

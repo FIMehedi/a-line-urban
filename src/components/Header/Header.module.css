@@ -1,0 +1,93 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    font-weight: bold;
+
+}
+
+.navbar ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #2D2D2D;
+}
+
+.navbar ul li a.loginBtn,
+.logoutBrn {
+    background-color: #FF6E40;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 30px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0msP;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar ul li a.loginBtn:hover {
+    background-color: #fd4e17;
+    box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+
+}
+
+.userName {
+    margin-right: 10px;
+}
+
+.menuIcon {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 20px 0;
+        position: relative;
+    }
+
+    .navbar {
+        background-color: #ccc;
+        padding: 20px;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        border-radius: 5px;
+        display: none;
+    }
+
+    .navbar ul li {
+        display: block;
+    }
+
+    .navbar ul li a {
+        padding: 10px 0;
+    }
+
+    .userName {
+        padding: 10px 0;
+    }
+
+    .loginBtn,
+    .logoutBrn {
+        margin-top: 10px;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    .show {
+        display: block;
+    }
+}

@@ -1,0 +1,93 @@
+.destination-form {
+    background-color: #EFEFEF;
+    padding: 20px 15px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+.destination-form input {
+    display: block;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.destination-form input:focus {
+    outline: none;
+}
+
+.searchBtn {
+    margin-top: 10px !important;
+}
+
+.selected-destination {
+    background-color: #FF6E40;
+    color: white;
+    border-radius: 5px;
+    padding: 20px 30px 20px;
+}
+
+
+.selected-destination ul li {
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+
+.service-option {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-option img {
+    width: 50px;
+}
+
+.people {
+    display: flex;
+    align-items: center;
+}
+
+.people span {
+    margin-left: 5px;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+.google-map {
+    width: 850px;
+    height: 550px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #EFEFEF;
+}
+
+.google-map div {
+    position: relative;
+}
+
+@media only screen and (max-width: 850px) {
+    .google-map {
+        width: 100%;
+    }
+
+    .google-map-container {
+        width: 100%;
+    }
+}
